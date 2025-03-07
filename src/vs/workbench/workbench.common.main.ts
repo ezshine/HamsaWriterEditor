@@ -189,8 +189,8 @@ import './contrib/notebook/browser/notebook.contribution.js';
 import './contrib/speech/browser/speech.contribution.js';
 
 // Chat
-import './contrib/chat/browser/chat.contribution.js';
-import './contrib/inlineChat/browser/inlineChat.contribution.js';
+// import './contrib/chat/browser/chat.contribution.js';
+// import './contrib/inlineChat/browser/inlineChat.contribution.js';
 
 // Interactive
 import './contrib/interactive/browser/interactive.contribution.js';
@@ -227,18 +227,18 @@ import './contrib/searchEditor/browser/searchEditor.contribution.js';
 import './contrib/sash/browser/sash.contribution.js';
 
 // SCM
-import './contrib/scm/browser/scm.contribution.js';
+// import './contrib/scm/browser/scm.contribution.js';
 
 // Debug
-import './contrib/debug/browser/debug.contribution.js';
-import './contrib/debug/browser/debugEditorContribution.js';
-import './contrib/debug/browser/breakpointEditorContribution.js';
-import './contrib/debug/browser/callStackEditorContribution.js';
-import './contrib/debug/browser/repl.js';
-import './contrib/debug/browser/debugViewlet.js';
+// import './contrib/debug/browser/debug.contribution.js';
+// import './contrib/debug/browser/debugEditorContribution.js';
+// import './contrib/debug/browser/breakpointEditorContribution.js';
+// import './contrib/debug/browser/callStackEditorContribution.js';
+// import './contrib/debug/browser/repl.js';
+// import './contrib/debug/browser/debugViewlet.js';
 
 // Markers
-import './contrib/markers/browser/markers.contribution.js';
+// import './contrib/markers/browser/markers.contribution.js';
 
 // Merge Editor
 import './contrib/mergeEditor/browser/mergeEditor.contribution.js';
@@ -285,8 +285,8 @@ import './contrib/relauncher/browser/relauncher.contribution.js';
 import './contrib/tasks/browser/task.contribution.js';
 
 // Remote
-import './contrib/remote/common/remote.contribution.js';
-import './contrib/remote/browser/remote.contribution.js';
+// import './contrib/remote/common/remote.contribution.js';
+// import './contrib/remote/browser/remote.contribution.js';
 
 // Emmet
 import './contrib/emmet/browser/emmet.contribution.js';
@@ -336,7 +336,7 @@ import './contrib/typeHierarchy/browser/typeHierarchy.contribution.js';
 
 // Outline
 import './contrib/codeEditor/browser/outline/documentSymbolsOutline.js';
-import './contrib/outline/browser/outline.contribution.js';
+// import './contrib/outline/browser/outline.contribution.js';
 
 // Language Detection
 import './contrib/languageDetection/browser/languageDetection.contribution.js';
@@ -360,7 +360,7 @@ import './contrib/editSessions/browser/editSessions.contribution.js';
 import './contrib/codeActions/browser/codeActions.contribution.js';
 
 // Timeline
-import './contrib/timeline/browser/timeline.contribution.js';
+// import './contrib/timeline/browser/timeline.contribution.js';
 
 // Local History
 import './contrib/localHistory/browser/localHistory.contribution.js';
@@ -393,7 +393,7 @@ import './contrib/share/browser/share.contribution.js';
 import './contrib/scrollLocking/browser/scrollLocking.contribution.js';
 
 // Inline Completions
-import './contrib/inlineCompletions/browser/inlineCompletions.contribution.js';
+// import './contrib/inlineCompletions/browser/inlineCompletions.contribution.js';
 
 // Drop or paste into
 import './contrib/dropOrPasteInto/browser/dropOrPasteInto.contribution.js';
