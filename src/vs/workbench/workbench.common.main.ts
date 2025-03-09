@@ -336,7 +336,7 @@ import './contrib/typeHierarchy/browser/typeHierarchy.contribution.js';
 
 // Outline
 import './contrib/codeEditor/browser/outline/documentSymbolsOutline.js';
-import './contrib/outline/browser/outline.contribution.js';
+// import './contrib/outline/browser/outline.contribution.js';
 
 // Language Detection
 import './contrib/languageDetection/browser/languageDetection.contribution.js';
