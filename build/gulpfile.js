@@ -15,6 +15,8 @@ const { transpileClientSWC, transpileTask, compileTask, watchTask, compileApiPro
 const { monacoTypecheckTask/* , monacoTypecheckWatchTask */ } = require('./gulpfile.editor');
 const { compileExtensionsTask, watchExtensionsTask, compileExtensionMediaTask } = require('./gulpfile.extensions');
 
+const { downloadSuperPawTask } = require('./gulpfile.superpaw');
+
 // API proposal names
 gulp.task(compileApiProposalNamesTask);
 gulp.task(watchApiProposalNamesTask);
@@ -34,8 +36,12 @@ gulp.task(compileClientTask);
 const watchClientTask = task.define('watch-client', task.series(util.rimraf('out'), task.parallel(watchTask('out', false), watchApiProposalNamesTask)));
 gulp.task(watchClientTask);
 
+// Download Latest Superpaw and Extract to ./extensions
+const downloadSuperPaw = task.define('download-superpaw', downloadSuperPawTask);
+gulp.task(downloadSuperPaw);
+
 // All
-const _compileTask = task.define('compile', task.parallel(monacoTypecheckTask, compileClientTask, compileExtensionsTask, compileExtensionMediaTask));
+const _compileTask = task.define('compile', task.series(downloadSuperPawTask, task.parallel(monacoTypecheckTask, compileClientTask, task.series(compileExtensionsTask), compileExtensionMediaTask)));
 gulp.task(_compileTask);
 
 gulp.task(task.define('watch', task.parallel(/* monacoTypecheckWatchTask, */ watchClientTask, watchExtensionsTask)));
