@@ -238,7 +238,7 @@ import './contrib/debug/browser/repl.js';
 import './contrib/debug/browser/debugViewlet.js';
 
 // Markers
-import './contrib/markers/browser/markers.contribution.js';
+// import './contrib/markers/browser/markers.contribution.js';
 
 // Merge Editor
 import './contrib/mergeEditor/browser/mergeEditor.contribution.js';
